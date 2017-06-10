@@ -3,6 +3,6 @@ defmodule Teacher.PageControllerTest do
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"
-    assert html_response(conn, 200) =~ "Welcome to Phoenix!"
+    assert html_response(conn, 200) =~ "<h2>Listing movies</h2>"
   end
 end
