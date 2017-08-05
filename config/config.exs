@@ -10,10 +10,10 @@ config :teacher,
   ecto_repos: [Teacher.Repo]
 
 # Configures the endpoint
-config :teacher, Teacher.Endpoint,
+config :teacher, TeacherWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "HmlZ43Bt7n1o0iyU1rHUs87QwCZvmXMWtnisOZp8r+vP9IhAg1o8MGtgxIiLmoPu",
-  render_errors: [view: Teacher.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: TeacherWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Teacher.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

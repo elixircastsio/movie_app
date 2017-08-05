@@ -11,7 +11,7 @@ defmodule Teacher do
       # Start the Ecto repository
       supervisor(Teacher.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(Teacher.Endpoint, []),
+      supervisor(TeacherWeb.Endpoint, []),
       # Start your own worker by calling: Teacher.Worker.start_link(arg1, arg2, arg3)
       # worker(Teacher.Worker, [arg1, arg2, arg3]),
     ]
