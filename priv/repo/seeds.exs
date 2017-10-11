@@ -11,7 +11,7 @@
 # and so on) as they will fail if something goes wrong.
 
 alias Teacher.Repo
-alias Teacher.Movie
+alias TeacherWeb.Movie
 
 Repo.insert!(%Movie{
   title: "Citizen Kane",
