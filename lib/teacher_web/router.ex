@@ -17,6 +17,7 @@ defmodule TeacherWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     resources "/movies", MovieController
+    get "/about", PageController, :about
     get "/", MovieController, :index
   end
 

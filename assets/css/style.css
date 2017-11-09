@@ -13,12 +13,12 @@ body {
 
 ::selection{
   background-color: #FFEC6E;
-  color: #fff;
+  color: #000;
 }
 
 ::-moz-selection {
   background: #46c2ca;
-  color: #fff;
+  color: #000;
 }
 
 .container {
@@ -72,6 +72,25 @@ table, th, td {
   text-align: left;
   padding: 10px;
   border: 1px solid black;
+}
+
+.nav-header {
+  position: relative;
+  width: 100%;
+}
+
+.nav-h1 {
+  float: left;
+  clear:none;
+}
+
+.nav-header .nav-link {
+  float: right;
+  margin: -40px 10px 10px 10px;
+}
+
+.nav-header .nav-link a {
+  margin-left: 5px;
 }
 
 .elixircasts-form {
